@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/*
+  Cranberry: #DB595A;
+  Melon: #E5A46E;
+  Deep Teal: #125669;
+  Jade: #0A5B54;
+*/
+
+body{
+  /* background-color:#6b1900; */
+  background-color: #0A5B54;
+}
+
+#webPage{
+  font-size: 5vw;
+  font-family:fantasy;
+  padding-top:10px;
+  text-align: center;
+  color: #E5A46E;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navBar{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li a{
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+  font-family: fantasy;
+  font-size:2vw;
+}
+
+li a:hover{
+  background-color:#34776C;
+}
+
+#kevin_pic{
+    width: 180px;
+    height: 200px;
+    margin:30px auto;
+    display:block;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+.education{
+  text-align: center;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+}
+
+.box1{
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #E5A46E;
+  background-color: #E5A46E;
+  width:50%;
+  height:30%;
+  margin:auto auto 30px;
+  display:flex;
+  flex-direction: column;
+  min-height:200px;
+}
+
+.box2{
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #DB595A;
+  background-color: #125669;
+  margin:0
+  display:flex;
+  flex-direction: column;
+}
+
+.box2_text{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size:calc(100% + 0.5vw);
+  margin:0;
+}
+
+.box1_text{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin:auto;
+}
+
+.contact_text{
+  display: inline-block;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.link{
+  text-decoration:none;
+  color:black;
+}
+
+.link:hover{
+  color:#DB595A;
+}
