@@ -1,89 +1,104 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="Website_Pages_css/first_css.css">
-    <link rel="icon" href="image/owl.jpg" type="image/gif" sizes="16x16">
-    <title>KT</title>
+    <link rel="stylesheet" href="CSS/index.css"></link>
+    <script src="https://kit.fontawesome.com/be91792de9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- Section 1 -->
-      <p id="webPage"> KT'S WEB</p>
+    <!-- Section 1 - Parallax -->
+    <div class="parallax">
+      <span class="parallaxTextBox">
+        Kevin Tran
+      </span>
     </div>
-    <!-- Section 2 -->
-    <div>
-      <ul class="navBar">
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="https://www.linkedin.com/in/kevin-tran-7471371a0/LinkedIn" target="_blank">LinkedIn</a></li>
-        <li><a href="page2.html"> Hobby </a></li>
-        <li><a href="page3.html"> Projects </a></li>
-      </ul>
-    </div>
-    <!-- Section 3 -->
-    <img  id="kevin_pic" src="Image/kevin2.jpg" alt="Kevin">
-    <!-- Section 4 about me -->
-    <div class="box1">
-      <div class="box2">
-        <p class="box2_text"> about me </p>
+    <!-- Section 2 - Nav Bar-->
+    <div class="navBarContainer">
+      <div class="navBarBox">
+        <a class="navBarBoxText" href="index.html"> <b>Home </b></a>
       </div>
-      <p class="box1_text">
-        Hi, my name is Kevin and I was born in Toronto. I have lived
-        in Toronto for my entire life. As a kid I loved playing
-        video games. Even up until now I still do. One of my dreams
-        as a kid was to make my own game one day. When I reached
-        highschool and discovered coding, I realized I could achieve
-        my dream one day. Since the day I started coding, I have loved
-        every moment and enjoy doing so very much.
-      </p>
-    </div>
-    <!-- Section 5 contact-->
-    <div class="box1">
-      <div class="box2">
-        <p class="box2_text"> contact </p>
+      <div class="navBarBox">
+        <a class="navBarBoxText" href="#projects"> <b>Project </b></a>
       </div>
-      <div class="education">
-        <p> Highschool: <a class="link" href="https://schoolweb.tdsb.on.ca/yorkmemorial/" target="_blank">York Memorial Collegiate Institute</a></p>
-        <p> September 2015 - June 2019 | O.S.S.D </p>
-        <p> University: <a class="link" href="https://www.ryerson.ca/" target="_blank"> Ryerson University</a></p>
-        <p> September 2019 - Present | Bachelors </p>
+      <div class="navBarBox">
+        <a class="navBarBoxText" href="#workExperience"> <b>Experience</b></a>
       </div>
     </div>
-    <!-- Section 6 experience -->
-    <div class="box1">
-      <div class="box2">
-        <p class="box2_text"> work experience </p>
+    <!-- Section 3 - About me -->
+    <div id="aboutMeContainer">
+      <div id="aboutMeTextBox1">
+        <span id="aboutMeText"><b> about me </b></span>
       </div>
-      <p class="box1_text">
-        Currently I am employed at "Happy Kingdom Entertainment".
-        I have been working there for 2+ years now and I am still currently employed there.
-        I work as a cashier in an arcade where I deal with money and make transactions with customers.
-        I also have experience at this job dealing with kids because when I'm not in the arcade I'm working in a playground where I enforce rules and monitor kids.
-      </p>
+      <div id="aboutMeBox">
+        <div id="aboutMeBox1">
+          My name is Kevin and I major in Computer Science at Ryerson
+          University. <br><br>
+          In my spare time I like to do web development and I enjoy making
+          small games. <br><br> The programming languages I currently know are
+          listed below!
+        </div>
+        <div id="filler"></div>
+        <div id="aboutMeBox2">
+          <div id="kevinPictureContainer">
+            <img id="kevinPicture"src="Image/kevin1.JPG"></img>
+          </div>
+          <div class="social-icons">
+            <a class="linkedIn" href="https://www.linkedin.com/in/kevin-tran-7471371a0/LinkedIn/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="gitHub" href="https://github.com/kevinguy28" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a class="instagram" href="https://www.instagram.com/kevinguy28/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Section 7 volunteer -->
-    <div class="box1">
-      <div class="box2">
-        <p class="box2_text"> volunteer experience </p>
+    <!-- Section 4 - Programming Languages-->
+    <div id="programLangContainer">
+      <div class="programmingLangIconContainer">
+        <div class="languageIcon"><p class="programText"> <b>Java</b></p><i class="fab fa-java fa-5x"></i></div>
+        <div class="languageIcon"><p class="programText"> <b>Python</b></p><i class="fab fa-python fa-5x"></i></div>
+        <div class="languageIcon"><p class="programText"> <b>HTML</b></p><i class="fab fa-html5 fa-5x"></i></div>
+        <div class="languageIcon"><p class="programText"> <b>CSS</b></p><i class="fab fa-css3-alt fa-5x"></i></div>
+        <div class="languageIcon"><p class="programText"> <b>JavaScript</b></p><i class="fab fa-js-square fa-5x"></i></div>
       </div>
-      <p class="box1_text">
-        I volunteered at an association called VWAT Family Services.
-        There I served as a youth leader where I helped host small group activities with people of ranging age groups.
-         I have also volunteered in school before to help perform tasks such as cleaning and or setting up events.
-      </p>
     </div>
-    <!-- Section 8 contact-->
-    <div class="box1">
-      <div class="box2">
-        <p class="box2_text"> contact </p>
+    <!-- Section 5 - projects -->
+    <div id="projects" class="header">
+      <span class="headerText">projects</span>
+    </div>
+    <div class="projectContainer">
+      <div class="projectName">
+        Tic-Tac-Toe :
       </div>
-      <p class="contact_text">
-        EMAIL: kevinhuytran1128@gmail.com
-      </p>
-      <div class="contact_text">
-        <p> Instagram: <a class="link" href="https://www.instagram.com/kevinguy28/" target="_blank">@kevinguy28</a></p>
+      <div class="theProject">
+        A simple game of Tic-Tac-Toe coded using HTML, CSS and Javascript!
       </div>
-      <div class="contact_text">
-        <p> Twitter: <a class="link" href="https://twitter.com/PKon28" target="_blank">@PKon28</a></p>
+      <a href="tic-tac-toe.html" class="playButton playButtonLoad">
+        <div class="playButtonText"> Play Tic-Tac-Toe</div>
+      </a>
+    </div>
+    <div class="projectContainer">
+      <div class="projectName">
+        Weather :
+      </div>
+      <div class="theProject">
+        Using OpenWeatherMap's API, HTML, CSS and Javascript, you can check the
+        weather of any city in the world!
+      </div>
+      <a href="weather.html" class="playButton playButtonLoad">
+        <div class="playButtonText"> Check the weather</div>
+      </a>
+    </div>
+    <!-- Section 6 - work experience -->
+    <div id="workExperience" class="header">
+      <span class="headerText"> work experience</span>
+    </div>
+    <div class="workExperienceContainer">
+      <div class="workExperienceName">
+        Happy Kingdom Entertainment :
+      </div>
+      <div class="workExperience">
+        I am currently still employed at Happy Kingdom and I have been working there
+        for almost 3 years. There I work as a cashier within an arcade. I handle
+        transactions
+        with customers and help to meet the customer's needs.
       </div>
     </div>
   </body>
 </html>
-

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body{
+  background-color:#f0eeec;
+  padding:0;
+  margin:0;
+}
+
+/* Parallax */
+
+.parallax{
+  background-attachment: fixed;
+  background-image:url("../Image/evangelion.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:100%;
+  width:100%;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parallaxTextBox{
+  min-height:5%;
+  min-width:12%;
+  background-color:#f0eeec;
+  margin:auto;
+  font-family: 'Didact Gothic', sans-serif;
+  border-radius:5px 15px;
+  text-align: center;
+  font-size:2em;
+  color:black;
+  animation: fadeIn 2s 1;
+}
+
+@keyframes fadeIn{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+/* Nav Bar */
+
+.navBarContainer{
+  width: 90%;
+  height:30px;
+  padding:5px;
+  border-bottom-style: solid;
+  border-bottom-color:black;
+  border-bottom-width: 3px;
+  margin:auto;
+  display: flex;
+}
+
+.navBarBox{
+  min-width: 20%;
+  height:30px;
+  text-align: center;
+  margin:0 auto 0;
+}
+
+.navBarBoxText{
+  font-size: 1.6em;
+  font-family: 'Didact Gothic', sans-serif;
+  text-decoration: none;
+  color: #1a1919;
+}
+
+/* Game */
+
+#player{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.8em;
+  margin:1.2vw;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  height: 460px;
+  background-color: black;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.grid div{
+  width: 150px;
+  height: 150px;
+  background-color: #0a142f;
+  margin-bottom: 5px;
+}
+
+.playerX{
+  background-image: url('../Image/X.png')
+}
+
+.playerO{
+  background-image: url("../Image/O.png")
+}
+
+.buttonContainer{
+  text-align:center;
+  margin-top:2.3vw;
+}
+
+#restartButton{
+  padding:1vw 8.3vw 1vw 8.3vw;
+  border-radius: 10px 0 10px 0;
+  margin:0 auto 10px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.1em;
+  visibility: hidden;
+  background-color: #ecfcfc;
+}
+
+#restartButton:hover{
+  background-color: #d3e2cd;
+}

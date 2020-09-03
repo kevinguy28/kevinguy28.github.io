@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+/* font-family: 'Didact Gothic', sans-serif; */
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Didact Gothic', sans-serif;
+  background-image:url("../Image/evangelion.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.app-wrap{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Nav Bar */
+
+.navBarContainer{
+  width: 90%;
+  height:30px;
+  padding:5px;
+  border-bottom-style: solid;
+  border-bottom-color:#e6f8f8;
+  border-bottom-width: 3px;
+  margin:auto;
+  display: flex;
+}
+
+.navBarBox{
+  min-width: 20%;
+  height:30px;
+  text-align: center;
+  margin: 0 auto 0;
+}
+
+.navBarBoxText{
+  font-size: 1.6em;
+  font-family: 'Didact Gothic', sans-serif;
+  text-decoration: none;
+  color: #e6f8f8;
+}
+
+/* Weather App */
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input{
+  width:100%;
+  max-width: 200px;
+  padding: 10px 15px;
+  border:none;
+  outline:none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 16px 0;
+  border-bottom: 3px solid #cdd5c6;
+
+  color: #313131;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+
+header input:focus{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main{
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align:center;
+}
+
+.location .city{
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.current .temp{
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  margin: 10px 0;
+  text-shadow: 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span{
+  font-weight: 500;
+}
+
+.current .weather{
+  color: white;
+  font-size: 32px;
+  font-weight: 700px;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low{
+  color:white;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0 4px rgba(0, 0, 0, 0.4);
+  opacity:0;
+}
