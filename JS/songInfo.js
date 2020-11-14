@@ -1,3 +1,4 @@
+console.log("4")
 document.addEventListener('DOMContentLoaded', ()=>{
   let url ="http://199.195.194.92:2199/rpc/meyima03/streaminfo.get?x=1";
   fetch(url)
