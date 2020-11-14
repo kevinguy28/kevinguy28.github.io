@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body{
+  background-color:#383838;
+  color:#D3D3DC;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#songPicture{
+  width:500px;
+  height:500px;
+}
