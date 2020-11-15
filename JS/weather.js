@@ -1,6 +1,7 @@
 require('dotenv').config()
 console.log(process.env);
 console.log("3");
+
 document.addEventListener('DOMContentLoaded', () =>{
 console.log("4");
 const api ={
