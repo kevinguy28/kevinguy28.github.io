@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () =>{
+require('dotenv').config()
+console.log(process.env)
 
 const api ={
   key: "6547813ec5832c39a9e465e1b57ef081",
