@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded', () =>{
 require('dotenv').config()
-console.log(process.env)
-
+console.log(process.env);
+console.log("3");
+document.addEventListener('DOMContentLoaded', () =>{
+console.log("4");
 const api ={
   key: "6547813ec5832c39a9e465e1b57ef081",
   base: "https://api.openweathermap.org/data/2.5/"
