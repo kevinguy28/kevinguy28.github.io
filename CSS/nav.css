@@ -58,7 +58,7 @@ a{
     .nav-links{
         position: absolute;
         right:0px;
-        top: calc(969px + 5rem);
+        top: calc(969px + 80px);
         height: 1000px;
         background-color:red;
         font-size:1.5rem;
