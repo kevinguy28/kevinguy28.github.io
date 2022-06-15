@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5rem;
+    background-color: #f1f6ce;
+    font-size: 2rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.logo{
+    color:black;
+    letter-spacing: 10px;
+}
+
+.nav-links
+{
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:black;
+    margin:3px;
+    transition:all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0px;
+        top:5rem;
+        height: 1000px;
+        background-color:red;
+        font-size:1.5rem;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        width:30%;
+        transform:translateX(100%);
+    }
+
+    .nav-links li{
+        opacity:0;
+    }
+
+    .burger{
+        display:block;
+    }
+}
+
+.nav-active{
+    transform:translateX(0%);
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(45deg) translate(-5px, 12.5px);
+}
+
+.toggle .line2{
+    opacity:0;
+}
+
+.toggle .line3{
+    transform: rotate(-45deg) translate(-5px, -12.5px);
+}
