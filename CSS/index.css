@@ -13,11 +13,10 @@ body{
   background-image:url("../Image/evangelion.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 
-  height:100%;
+  height:100vh;
   width:100%;
-
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -42,93 +41,41 @@ body{
   animation: fadeIn 2s 1;
 }
 
-@keyframes fadeIn{
-  0%{opacity:0;}
-  100%{opacity:1;}
+/* About me*/
+
+.aboutMeContainer{
+  color:black;
+  max-width: 75%;
+  margin:5rem auto;
 }
 
-/* Nav Bar */
-
-.navBarContainer{
-  width: 90%;
-  height:30px;
-  padding:5px;
-  border-bottom-style: solid;
-  border-bottom-color:black;
-  border-bottom-width: 3px;
-  margin:auto;
-  display: flex;
-}
-
-.navBarBox{
-  min-width: 20%;
-  height:30px;
-  margin:0 auto 0;
-  text-align: center;
-}
-
-.navBarBoxText{
-  font-size: 1.6em;
-  font-family: 'Didact Gothic', sans-serif;
-  text-decoration: none;
-  color: #1a1919;
-}
-
-/* About Me Container */
-
-#aboutMeContainer{
-  width: 75%;
-  min-height: 35%;
-  margin:50px auto 10px;
-}
-
-#aboutMeTextBox1{
-  display:block;
-}
-
-#aboutMeText{
-  font-size:1.8em;
+.aboutMeHeader{
   font-family: 'Didact Gothic', sans-serif;
   color:#1a1919;
   border-bottom-style:solid;
+  font-size:2.5rem;
+  font-weight:bold;
 }
 
-#aboutMeBox{
-  width:100%;
-  min-height:27%;
+.aboutMeContent{
   display:flex;
-  flex-direction:row;
 }
 
-#aboutMeBox1{
-  width:68%;
-  height:100%;
+.aboutMeText{
+  width:60%;
   font-family: 'Didact Gothic', sans-serif;
-  font-size:18px;
-  margin:auto;
-  color: #262523;
+  font-size:1.5rem;
+  padding: 10px 0px 10px 0px;
 }
 
-#filler{
-  width:2%;
-  height:100%;
-}
-
-#aboutMeBox2{
-  width:30%;
-  min-height:100%;
-  display: flex;
-  flex-direction:column;
-}
-
-#kevinPictureContainer{
-  width: 100%;
-  height:80%;
+.aboutMePicLink{
+  width:40%;
 }
 
 #kevinPicture{
-  width:160px;
-  height:160px;
+  padding:0.625rem;
+  width:10rem;
+  height:10rem;
   border-radius: 30%;
   margin:auto;
   display: block;
@@ -142,10 +89,12 @@ body{
 .social-icons{
   padding: 10px 0;
   margin:auto;
+  display:flex;
+  justify-content: center;
 }
 
 .social-icons a{
-  display: inline-block;
+  display: block;
   width:36px;
   height:36px;
   text-align: center;
@@ -162,6 +111,18 @@ body{
 
 .social-icons a:hover{
   background: #e91e36;
+}
+
+@media screen and (max-width:768px){
+  .aboutMeContent{
+    flex-direction: column;
+  }
+  .aboutMeText{
+    width:100%;
+  }
+  .aboutMePicLink{
+    width:100%;
+  }
 }
 
 /* Programming Language Container */
@@ -199,7 +160,7 @@ body{
 }
 
 .headerText{
-  font-size:1.8em;
+  font-size:2.5rem;
   font-family: 'Didact Gothic', sans-serif;
   color:#1a1919;
   border-bottom-style:solid;
@@ -214,13 +175,13 @@ body{
 
 .projectName{
   font-family: 'Didact Gothic', sans-serif;
-  font-size:24px;
+  font-size:2rem;
   color: #262523;
 }
 
 .theProject{
   font-family: 'Didact Gothic', sans-serif;
-  font-size:18px;
+  font-size:1.5rem;;
   color: #262523;
 }
 
@@ -267,6 +228,10 @@ body{
 
 /* Work experience */
 
+.headerText{
+  font-size: 2.5rem;
+}
+
 .workExperienceContainer{
   width: 75%;
   min-height:20%;
@@ -275,12 +240,12 @@ body{
 
 .workExperienceName{
   font-family: 'Didact Gothic', sans-serif;
-  font-size:24px;
+  font-size:2rem;
   color: #262523;
 }
 
 .workExperience{
   font-family: 'Didact Gothic', sans-serif;
-  font-size:18px;
+  font-size:1.5rem;
   color: #262523;
 }
