@@ -17,33 +17,6 @@ body{
   min-height: 100vh;
 }
 
-/* Nav Bar */
-
-.navBarContainer{
-  width: 90%;
-  height:30px;
-  padding:5px;
-  border-bottom-style: solid;
-  border-bottom-color:#e6f8f8;
-  border-bottom-width: 3px;
-  margin:auto;
-  display: flex;
-}
-
-.navBarBox{
-  min-width: 20%;
-  height:30px;
-  text-align: center;
-  margin: 0 auto 0;
-}
-
-.navBarBoxText{
-  font-size: 1.6em;
-  font-family: 'Didact Gothic', sans-serif;
-  text-decoration: none;
-  color: #e6f8f8;
-}
-
 /* Weather App */
 
 header{

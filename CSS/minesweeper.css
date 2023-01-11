@@ -1,9 +1,20 @@
+body{
+    background-color:#03122f;
+    padding:0;
+    margin:0;
+}
+
 .grid{
     height:400px;
     width:400px;
     display:flex;
     flex-wrap:wrap;
-    background-color:grey;
+    background-color:#D1D4BD;
+    position: ABSOLUTE;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
 }
 
 .grid div{
@@ -11,11 +22,23 @@
     width: 40px;
 }
 
-.bomb{
+/* .bomb{
     background-color:orange;
     
-}
+} */
 
 .checked{
-    background-color:blue;
+    background-color:#f1f6ce;
 }
+
+.refresh{
+    position: ABSOLUTE;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:black;
+    border:none;
+    color:white;
+    padding:1rem 2rem;
+}
+

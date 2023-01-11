@@ -1,24 +1,36 @@
 <html>
-  <head
+  <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/weather.css"></link>
+    <link rel="stylesheet" href="CSS/weather.css">
+    <link rel="stylesheet" href="CSS/nav.css">
     <link rel="icon" href="Image/rei.jpg" type="image/gif" sizes="16x16">
     <title>Weather checker</title>
     <script src="JS/weather.js"></script>
+    <script src="JS/nav.js"></script>
   </head>
   <body>
-    <div class="app-wrap">
-      <div class="navBarContainer">
-        <div class="navBarBox">
-          <a class="navBarBoxText" href="index.html"> <b>Home </b></a>
-        </div>
-        <div class="navBarBox">
-          <a class="navBarBoxText" href="https://kevinguy.ca/index.html#projects"> <b>Project </b></a>
-        </div>
-        <div class="navBarBox">
-          <a class="navBarBoxText" href="https://kevinguy.ca/index.html#workExperience"> <b>Experience</b></a>
-        </div>
+    <nav>
+      <div>
+          <h4 class="logo">KEVIN</h4>
       </div>
+      <ul class="nav-links">
+          <li>
+              <a class="navText" href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="navText" href="https://kevinguy.ca/index.html#projects">Projects</a>
+          </li>
+          <li>
+              <a class="navText" href="https://kevinguy.ca/index.html#workExperience">Experience</a>
+          </li>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+    <div class="app-wrap">
       <header>
         <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..."></input>
       </header>
@@ -36,3 +48,4 @@
     </div>
   </body>
 </html>
+

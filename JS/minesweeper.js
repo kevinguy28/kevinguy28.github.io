@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(i < width*width-width-2 && !isRightEdge && squares[i+1+width].classList.contains('bomb')){total++}
                 if(i < width*width-width-1 && squares[i+width].classList.contains('bomb')){total++} 
                 squares[i].setAttribute('data', total);
-                console.log(squares[i]);
             }
         }
         
@@ -80,30 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         }
-
-        // if(!square.classList.contains('checked') && (flags < bombCount)){
-        //     if(!square.classList.contains('flag')){
-        //         square.classList.add('flag');
-        //         square.innerHTML = '🏳️‍🌈';
-        //         flags++;
-        //         console.log(flags);
-        //         gameWon();
-        //         return;
-        //     }else{
-        //         square.classList.remove('flag');
-        //         square.innerHTML = '';
-        //         flags--;
-        //         console.log(flags);
-        //         return;
-        //     }
-        // }
-        // console.log(square.classList.contains('flags') +":" + flags + ":");
-        // if(square.classList.contains('flags')){
-        //     square.classList.remove('flag');
-        //     square.innerHTML = '';
-        //     flags--; 
-        // }
-        
+    
         console.log('the problem is here');
         return;
     }
@@ -119,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let total = square.getAttribute('data');
             if(total != 0){
                 square.classList.add('checked');
+                console.log(total)
                 square.innerHTML = total;
                 return;
             }

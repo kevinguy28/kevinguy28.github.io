@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Minesweeper</title>
-    <link rel="stylesheet" href="CSS/minesweeper.css"></link>
+    <link rel="stylesheet" href="CSS/minesweeper.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <script src="JS/nav.js"></script>
     <script src="JS/minesweeper.js" charset="utf-8"></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <h4 class="logo">KEVIN</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="navText" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="navText" href="index.html#projects">Projects</a>
+            </li>
+            <li>
+                <a class="navText" href="#workExperience">Experience</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Minesweeper-->
     <div class="grid"></div>
+    <button class="refresh" onClick="window.location.reload();">Restart</button>
 </body>
 </html>
