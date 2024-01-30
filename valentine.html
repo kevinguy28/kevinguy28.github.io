@@ -4,25 +4,29 @@
         <link rel="stylesheet" href="CSS/valentine.css">
         <script src="JS/valentine.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <img src="gif/cat2.gif" id="gif" class="gif" style="width:30vh;height:30vh;">
-        <div class="text" id="text">
-            Since you and me are together ... 
+        <div class="theContainer">
+            <img src="gif/cat2.gif" id="gif" class="gif" style="width:30vh;height:30vh;">
+            <div class="text" id="text">
+                Since you and me are together ... 
+            </div>
+            <div id="button" class="button" onclick="myFunction()">
+                <button type="button" >Click</button>
+            </div>
+            <div class="buttonC">
+                <button id="yes" style="display: none" type="button" onclick="game1()">Yes</button>
+                <button id="no" style="display: none" type="button" onclick="game2()">No</button>
+            </div>
+            <div class="buttonC">
+                <button id="yes2" style="display: none" type="button" onclick="game3()">Yes</button>
+                <button id="no2" style="display: none" type="button" onclick="game4()">No</button>
+            </div>
+            <button id="no3" style="display: none" type="button" onclick="game5()">No</button>
+            <div id="firework" class="firework" style="display: none";></div>
         </div>
-        <div id="button" class="button" onclick="myFunction()">
-            <button type="button" >Click</button>
-        </div>
-        <div class="buttonC">
-            <button id="yes" style="display: none" type="button" onclick="game1()">Yes</button>
-            <button id="no" style="display: none" type="button" onclick="game2()">No</button>
-        </div>
-        <div class="buttonC">
-            <button id="yes2" style="display: none" type="button" onclick="game3()">Yes</button>
-            <button id="no2" style="display: none" type="button" onclick="game4()">No</button>
-        </div>
-        <button id="no3" style="display: none" type="button" onclick="game5()">No</button>
-        <div id="firework" class="firework" style="display: none";></div>
     </body>
 </html>

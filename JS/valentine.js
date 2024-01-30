@@ -3,13 +3,13 @@ let cindex = 0;
 const text = [
     "I kind of thought it was a given ...",
     "But the internet was telling me I still have to ask??",
-    "first relationship EVER problems i guess ... ",
+    "First relationship ever - Sorry didn't know ... ",
     "Laurakins ... Will you be my Valentines?",
-    "Well I kind of wanted you to say no ...",
+    "Hmmm ... Too easy ... Can you try saying no ... ",
 ];
 
 const text2 =[
-    "Well thats fucked up since we're TOGETHER!!! TRY AGAIN",
+    "Saying No, messed up don't you think? Try again :3",
     "!?!?!?!?!?!?!!?!?!?!"
 ];
 
@@ -58,7 +58,7 @@ function game2(){
 }
 
 function game3(){
-    document.getElementById("text").innerHTML ="YIPPPPPPPIEEEE!!!"
+    document.getElementById("text").innerHTML ="YIPPPPPPPIEEEE!!! <333"
     document.getElementById("gif").src = cat[2];
     document.getElementById("yes2").style.display = "none";
     document.getElementById("no2").style.display = "none";
